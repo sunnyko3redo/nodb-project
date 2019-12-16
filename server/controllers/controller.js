@@ -89,12 +89,19 @@ module.exports = {
     },
     updateFighter: (req, res) =>{
         const {updatedFighter} = req.body
+        const editedFighter = {}
         // destructoring fighter from the body that is coming in.
+        for(let key in updatedFighter){
+            if(updatedFighter[key]) {
+                editedFighter[key] = updatedFighter[key]
+            }
+        }
+
         const {id} = req.params
         // destructoring the id from the received params
         const index = fighterList.findIndex(el => el.id === +id)
         // this is destructoring the index of fighterList to "index"
-        const updatedObj = {...fighterList[index], ...updatedFighter}
+        const updatedObj = {...fighterList[index], ...editedFighter}
         // this is updating fighterList @ the index discovered to updatedFighter
         fighterList[index] = updatedObj
         // this is saving the updatedObj to the object located at that index

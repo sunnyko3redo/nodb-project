@@ -1,5 +1,65 @@
 .App {
   text-align: center;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  border: 30px;
+  background-position: center;
+  /* background-size: cover; */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNUbGZor7Qs9fntSMBwrbKNyCvVUhNEtV5WubLjYVUxiLiq8q&s);
+}
+
+input {
+  border-color: Green;
+}
+
+.Header {
+  max-height: 130vh;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.button {
+  height: 3vh;
+}
+
+.one {
+  display: flex;
+  max-height: 20vh;
+  border: 1px black solid;
+  align-items: center;
+}
+
+.button2{
+  display: flex;
+  align-items: bottom;
+}
+
+
+
+.Champion {
+  display: flex;
+  justify-content: space-evenly;
+  border: 10px;
+  border-top: yellow;
+  background-color: yellow;
+  /* margin: 10px; */
+}
+
+.Top5 {
+  background-color: silver;
+  border: 1px black solid;
+
+
+}
+
+.FighterList {
+  background-color: rgb(243, 174, 0);
+}
+
+img {
+  height: 10vh
 }
 
 .App-logo {
