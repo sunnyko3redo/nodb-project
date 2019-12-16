@@ -11,6 +11,7 @@
 
 input {
   border-color: Green;
+  height: 5vh;
 }
 
 .Header {
@@ -21,7 +22,10 @@ input {
 }
 
 .button {
-  height: 3vh;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: green;
+
 }
 
 .one {
@@ -34,6 +38,16 @@ input {
 .button2{
   display: flex;
   align-items: bottom;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: green;
+
+}
+
+.button3 {
+  height: 5vh;
+  border-radius: 10px;
+  background-color: red;
 }
 
 
